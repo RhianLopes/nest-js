@@ -86,7 +86,7 @@ export class AppService {
 }
 ```
 
-Esse é o serviço base construido da aplicação informado no módulo, sendo necessário utilizar a anotação `@Injectable`, configuração que informa que esse será um novo componente que pode ser injetável. Nesse serviço podemos ver nossa mensagem base ao acessar o endereço http://localhost:3000/.
+Esse é o serviço base construido da aplicação informado no módulo, sendo necessário utilizar a anotação `@Injectable` muito semelhante as anotações `@Service` e `@Component` do Java, configuração que informa que esse será um novo componente que pode ser injetável. Nesse serviço podemos ver nossa mensagem base ao acessar o endereço http://localhost:3000/.
 
 - **app.controller.ts**
 
@@ -105,7 +105,7 @@ export class AppController {
 }
 ```
 
-Essa é nossa controller base da aplicação informada no módulo, sendo necessário em componentes do tipo controller a anotação `@Controller`, configuração que informa que essa será uma controller que exibe endpoints da API, sendo assim possível criar serviços HTTP por meio das anotações, como exemplo no código a anotação `@Get` que configura o endpoint chamado por nós ao acessarmos o endereço http://localhost:3000/.
+Essa é nossa controller base da aplicação informada no módulo, sendo necessário em componentes do tipo controller a anotação `@Controller` muito semelhante ao Java e C#, configuração que informa que essa será uma controller que exibe endpoints da API, sendo assim possível criar serviços HTTP por meio das anotações, como exemplo no código a anotação `@Get` que configura o endpoint chamado por nós ao acessarmos o endereço http://localhost:3000/.
 
 Podemos ainda observar que nessa controller é utilizado o `AppService` informado em nosso modulo, que possui em seu interior o método `getHello()` que retorna o nosso Hello World!.
 
